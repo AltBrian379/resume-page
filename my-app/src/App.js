@@ -18,9 +18,9 @@ const App = () => {
 
 const Header = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light" style={{width: "100%"}}>
-      <div className="container-fluid">
-        <a className="navbar-brand" href="#">Brian Altamirano</a>
+    <nav className="navbar navbar-expand-lg navbar-light bg-light" style={{width: "100%", padding: "0px", position: "fixed", zIndex: "2" }}>
+      <div className="container-fluid" style={{backgroundColor: "#A8BBD2", padding: "8px"}} >
+        <a className="navbar-brand" >Brian Altamirano</a>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
          <span className="navbar-toggler-icon"></span>
         </button>
@@ -30,10 +30,10 @@ const Header = () => {
           <a className="nav-link active" aria-current="page" href="../public/index.html">Home</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="https://github.com/AltBrian379"><i class="fab fa-github"></i> Github</a>
+          <a className="nav-link" href="https://github.com/AltBrian379" style={{backgroundColor:"#B3D5FF", borderRadius: "10px"}} ><i class="fab fa-github"></i> Github</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="mailto:brianaltamirano.business@gmail.com"><i class="fa fa-envelope"></i> E-Mail</a>
+          <a className="nav-link" href="mailto:brianaltamirano.business@gmail.com" style={{backgroundColor:"#B3D5FF", borderRadius: "10px", margin: "0px 3px"}}><i class="fa fa-envelope"></i> E-Mail</a>
         </li>
         <li className="nav-item dropdown">
           <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -59,7 +59,7 @@ const Header = () => {
 
 const Section = () => {
   return (
-    <div class="card mb-3" style={{width: "100%"}}>
+    <div class="card mb-3" style={{width: "100%", margin: "45px"}}>
       <div class="row g-0">
       <div class="col-md-4">
         <img src="./images/stock_html.jpg" class="img-fluid rounded-start" alt="Stock HTML Photo"/>
@@ -70,9 +70,11 @@ const Section = () => {
           <p class="card-text">
             <ul>
               <li>Graduated CSU Fullerton with a bachelors in Computer Science</li>
-              <li>Strong Web Development Skills</li>
-              <li></li>
-
+              <li>Front-End Web Developer with strong HTML/CSS, Javascript, and React skills</li>
+                <ul>
+                  <li>with Full-Stack knowledge using Express.js and MongoDB</li>
+                </ul>
+              <li>Hobbyist Game Developer using Godot and Source Engine</li>
             </ul>
           </p>
           <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
