@@ -59,15 +59,22 @@ const Header = () => {
 
 const Section = () => {
   return (
-    <div class="card mb-3" style={{maxWidth: "100%"}}>
+    <div class="card mb-3" style={{width: "100%"}}>
       <div class="row g-0">
       <div class="col-md-4">
-        <img src="..." class="img-fluid rounded-start" alt="..."/>
+        <img src="./images/stock_html.jpg" class="img-fluid rounded-start" alt="Stock HTML Photo"/>
       </div>
       <div class="col-md-8">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <h5 class="card-title">Hello my name is <span className="fw-bold">Brian Altamirano</span></h5>
+          <p class="card-text">
+            <ul>
+              <li>Graduated CSU Fullerton with a bachelors in Computer Science</li>
+              <li>Strong Web Development Skills</li>
+              <li></li>
+
+            </ul>
+          </p>
           <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
         </div>
       </div>
@@ -77,7 +84,7 @@ const Section = () => {
 };
 const Card = () => {
   return (
-    <div className="card mb-3" style={{width: "18rem"}}>
+    <div className="card mb-3" style={{width: "90vw"}}>
       <img src="..." className="card-img-top" alt="..."/>
       <div className="card-body">
         <h5 className="card-title">Card title</h5>
