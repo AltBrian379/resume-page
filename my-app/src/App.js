@@ -9,10 +9,11 @@ const App = () => {
       <div className="d-flex flex-column align-items-center">
         <Header/>
         <Section/>
-        <Card titleText={movieReviewObj.title} descriptionText={movieReviewObj.description}/>
-        <Card titleText={movieReviewObj.title} descriptionText={movieReviewObj.description}/>
-        <Card titleText={movieReviewObj.title} descriptionText={movieReviewObj.description}/>
-        <Card titleText={movieReviewObj.title} descriptionText={movieReviewObj.description}/>
+        <h2 className='big-header'>Projects</h2>
+        <Card titleText={movieReviewObj.title} descriptionText={movieReviewObj.description} imageSrc="../images/movie-review-website.png"/>
+        <Card titleText={null} descriptionText={null}/>
+        <Card titleText={null} descriptionText={null}/>
+        <Card titleText={null} descriptionText={null}/>
 
         <Card/>
         <Card/>
@@ -93,8 +94,8 @@ const Section = () => {
 };
 const Card = (props) => {
   return (
-    <div className="card col-sm-6 col-md-4 col-lg-3" >
-      <img src="..." className="card-img-top" alt="..."/>
+    <div className="card col-sm-6 col-md-4 col-lg-5" >
+      <img src={props.imageSrc} className="card-img-top" alt="..."/>
       <div className="card-body">
         <h5 className="card-title">{props.titleText}</h5>
         <p className="card-text">{props.descriptionText}</p>
