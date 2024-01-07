@@ -1,3 +1,9 @@
+:root {
+  --primary: #B3D5FF;
+  --secondary: #A8BBD2;
+  --accent: #85A2C6;
+  --text-color: #050608;
+}
 .App {
   text-align: center;
 }
@@ -6,6 +12,19 @@
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+.container-fluid{
+  background-color: var(--primary);
+  padding: 8px
+}
+.nav-link-highlight {
+ 
+  border-radius: 10px;
+  max-width:fit-content;
+
+}
+.secondary-section {
+  background-color: var(--secondary);
 }
 
 .big-header {
@@ -17,6 +36,10 @@
   background-color: #B3D5FF;
   border: 0px;
   color: black;
+}
+
+.card > img {
+  object-fit: fill;
 }
 
 @media (prefers-reduced-motion: no-preference) {

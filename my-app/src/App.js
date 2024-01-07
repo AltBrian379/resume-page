@@ -9,15 +9,13 @@ const App = () => {
       <div className="d-flex flex-column align-items-center">
         <Header/>
         <Section/>
-        <h2 className='big-header'>Projects</h2>
-        <Card titleText={movieReviewObj.title} descriptionText={movieReviewObj.description} imageSrc="../images/movie-review-website.png"/>
-        <Card titleText={null} descriptionText={null}/>
-        <Card titleText={null} descriptionText={null}/>
-        <Card titleText={null} descriptionText={null}/>
-
-        <Card/>
-        <Card/>
-        <Card/>
+        <div className="secondary-section d-flex flex-column flex-wrap align-items-center">
+          <h2 className='big-header'>Projects</h2>
+          <Card titleText={movieReviewObj.title} descriptionText={movieReviewObj.description} imageSrc="../images/movie-review-website.png"/>
+          <Card titleText={null} descriptionText={null}/>
+          <Card titleText={null} descriptionText={null}/>
+          <Card titleText={null} descriptionText={null}/>
+        </div>
 
       </div>
     </div>
@@ -27,7 +25,7 @@ const App = () => {
 const Header = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light" style={{width: "100%", padding: "0px", position: "fixed", zIndex: "2" }}>
-      <div className="container-fluid" style={{backgroundColor: "#A8BBD2", padding: "8px"}} >
+      <div className="container-fluid" >
         <a className="navbar-brand" >Brian Altamirano</a>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
          <span className="navbar-toggler-icon"></span>
@@ -38,10 +36,10 @@ const Header = () => {
           <a className="nav-link active" aria-current="page" href="../public/index.html">Home</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="https://github.com/AltBrian379" style={{backgroundColor:"#B3D5FF", borderRadius: "10px"}} ><i class="fab fa-github"></i> Github</a>
+          <a className="nav-link nav-link-highlight" href="https://github.com/AltBrian379" ><i class="fab fa-github"></i> Github</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="mailto:brianaltamirano.business@gmail.com" style={{backgroundColor:"#B3D5FF", borderRadius: "10px", margin: "0px 3px"}}><i class="fa fa-envelope"></i> E-Mail</a>
+          <a className="nav-link nav-link-highlight" href="mailto:brianaltamirano.business@gmail.com" ><i class="fa fa-envelope"></i> E-Mail</a>
         </li>
         <li className="nav-item dropdown">
           <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -67,14 +65,14 @@ const Header = () => {
 
 const Section = () => {
   return (
-    <div class="card mb-3" style={{width: "100%", margin: "55px 0px"}}>
+    <div class="card mb-3" style={{width: "100%", margin: "55px 0px 0px 0px"}}>
       <div class="row g-0">
       <div class="col-md-4">
         <img src="./images/stock_html.jpg" class="img-fluid rounded-start" alt="Stock HTML Photo"/>
       </div>
       <div class="col-md-8">
         <div class="card-body">
-          <h5 class="card-title">Hello my name is <span className="fw-bold">Brian Altamirano</span></h5>
+          <h5 class="card-title">Hello, my name is <span className="fw-bold">Brian Altamirano</span></h5>
           <p class="card-text">
             <ul>
               <li>Graduated CSU Fullerton with a bachelors in Computer Science</li>
@@ -94,8 +92,8 @@ const Section = () => {
 };
 const Card = (props) => {
   return (
-    <div className="card col-sm-6 col-md-4 col-lg-5" >
-      <img src={props.imageSrc} className="card-img-top" alt="..."/>
+    <div className="card col-sm-12 col-md-8 col-lg-8" >
+      <img src={props.imageSrc} style={{objectFit:"contain"}} className="card-img-top" alt="..."/>
       <div className="card-body">
         <h5 className="card-title">{props.titleText}</h5>
         <p className="card-text">{props.descriptionText}</p>
