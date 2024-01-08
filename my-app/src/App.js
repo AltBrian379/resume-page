@@ -83,7 +83,7 @@ const Section = () => {
               <li>Hobbyist Game Developer using Godot and Source Engine</li>
             </ul>
           </p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          <p class="card-text"><small class="text-muted"><i>This resume built with the React Framework.</i></small></p>
         </div>
       </div>
     </div>
