@@ -1,6 +1,6 @@
 import './App.css';
 
-const movieReviewObj = {title: "Movie Review Website (Fullstack)", description: "This project aims to create a fullstack website with a front-end built with pure HTML/CSS, connected to a backend powered by MongoDB, and connected together with an API built with Express.js"}
+const movieReviewObj = {title: "Fullstack Movie Review Website", description: "Built a fullstack movie review website that dynamically pulls data from a backend to fill two static HTML pages, by using pure HTML/CSS/JS for the front-end, MongoDB as the backend, and Express.js to build the middleware."}
 
 const App = () => {
   return (
@@ -12,7 +12,7 @@ const App = () => {
         <div className="secondary-section d-flex flex-column flex-wrap align-items-center">
           <h2 className='big-header'>Projects</h2>
           <Card titleText={movieReviewObj.title} descriptionText={movieReviewObj.description} imageSrc="../images/movie-review-website.png"/>
-          <Card titleText={null} descriptionText={null}/>
+          <Card titleText="JenniGame" descriptionText="Developed a mobile game application with 5 complete micro-games, by using the Unity Game engine framework written in C#." imageSrc="../images/Jennigame.gif"/>
           <Card titleText={null} descriptionText={null}/>
           <Card titleText={null} descriptionText={null}/>
         </div>
@@ -41,20 +41,25 @@ const Header = () => {
         <li className="nav-item">
           <a className="nav-link nav-link-highlight" href="mailto:brianaltamirano.business@gmail.com" ><i class="fa fa-envelope"></i> E-Mail</a>
         </li>
+        {/* 
         <li className="nav-item dropdown">
           <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
+            More
           </a>
+          
           <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a className="dropdown-item" href="#">Action</a></li>
+            <li><a className="dropdown-item" href="#">Game Design</a></li>
             <li><a className="dropdown-item" href="#">Another action</a></li>
             <li><hr className="dropdown-divider"/></li>
             <li><a className="dropdown-item" href="#">Something else here</a></li>
           </ul>
         </li>
+            */}
+        {/* 
         <li className="nav-item">
           <a className="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-        </li>
+        </li>*/}
+  
       </ul>
     </div>
   </div>
@@ -92,7 +97,7 @@ const Section = () => {
 };
 const Card = (props) => {
   return (
-    <div className="card col-sm-12 col-md-8 col-lg-8" >
+    <div className="card col-sm-12 col-md-8 col-lg-8 project-card" >
       <img src={props.imageSrc} style={{objectFit:"contain"}} className="card-img-top" alt="..."/>
       <div className="card-body">
         <h5 className="card-title">{props.titleText}</h5>
