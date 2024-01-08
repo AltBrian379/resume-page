@@ -24,7 +24,7 @@
 
 }
 .secondary-section {
-  background-color: var(--secondary);
+  background-color: white;
   margin: -20px 0px 0px 0px;
   padding: 20px 0px 0px 0px;
   width: 100%;
@@ -39,9 +39,12 @@
 .btn-primary {
   background-color: #B3D5FF;
   border: 0px;
+  box-shadow: 0px;
   color: black;
 }
-
+.section-card{
+  margin: 0px 10px;
+}
 .project-card {
   max-width: 750px;
   margin: 20px 0px;

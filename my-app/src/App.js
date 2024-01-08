@@ -70,14 +70,14 @@ const Header = () => {
 
 const Section = () => {
   return (
-    <div class="card mb-3" style={{width: "100%", margin: "55px 0px 0px 0px"}}>
+    <div class="card mb-3 section-card" style={{width: "100%", margin: "55px 0px 0px 0px"}}>
       <div class="row g-0">
       <div class="col-md-4">
         <img src="./images/stock_html.jpg" class="img-fluid rounded-start" alt="Stock HTML Photo"/>
       </div>
       <div class="col-md-8">
         <div class="card-body">
-          <h5 class="card-title">Hello, my name is <span className="fw-bold">Brian Altamirano</span></h5>
+          <h5 class="card-title" style={{fontSize:"2em"}}>Hello, my name is <span className="fw-bold">Brian Altamirano</span></h5>
           <p class="card-text">
             <ul>
               <li>Graduated CSU Fullerton with a bachelors in Computer Science</li>
@@ -89,6 +89,9 @@ const Section = () => {
             </ul>
           </p>
           <p class="card-text"><small class="text-muted"><i>This resume built with the React Framework.</i></small></p>
+          <a href="#" className="btn btn-primary section-card-btn">Go somewhere</a>
+          <a href="#" className="btn btn-primary section-card-btn">Go somewhere</a>
+          <a href="#" className="btn btn-primary section-card-btn">Go somewhere</a>
         </div>
       </div>
     </div>
